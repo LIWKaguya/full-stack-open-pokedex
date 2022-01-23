@@ -1,0 +1,10 @@
+Solution for exercise 11.1:
+*For example if I choose Python as the main language, the pyLint can come in handy with linting, the PyUnit/UnitTesting for the test and you can as well use Buildbot for 
+integration test. Lastly Bitbake/Buildout for building tool, however, python doesn't need build tool unless there are involves with extensions that need to be compiled and 
+deployed can be use Github Actions.
+*Beside Jenkins and Github Actions, there are many more as good as the two mentioned before such as: Teamcity, Travis, GoCD, GitLab, CircleCI ( which get a lot of advertise 
+recently ) and Codeship. Take CircleCI for example, it supports currently now only in GitHub and what makes it special it that their services are offered by Containers. Thus,
+CircleCI also support Docker which is an open source containerization platform and allows developers to package applications into containers.
+*For environment like this, the best way is using cloud-based environment because there are only 6 people involve in the project and using Jenkins would take a lot of times
+to configurate and it won't be as efficient using the GitHub actions which have all the tools available for basic needs. Moreover, using Jenkins meaning that you have to bill
+monthly for their service which is not worth it for a small team project.
