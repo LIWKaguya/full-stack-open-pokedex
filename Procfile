@@ -1,1 +1,1 @@
-ebdfbsdfb
+web: npm run start-prod
