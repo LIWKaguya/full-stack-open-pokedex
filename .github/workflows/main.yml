@@ -20,3 +20,9 @@ jobs:
           heroku_app_name: this-pokedex-app 
           heroku_email: hungle120901@gmail.com
           healthcheck: "https://this-pokedex-app.herokuapp.com/health"
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.33.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: "patch"
+          DRY_RUN: true
