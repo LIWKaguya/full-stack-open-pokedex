@@ -1,1 +1,1 @@
-web: bleh
+web: npm run start-prod
